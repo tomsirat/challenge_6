@@ -1,8 +1,9 @@
 .speech-bubble {
     position: relative;
-    background-image: url(/home/coudert/code3/challenge_6/images/citation.jpg);
+    background-image: url(images/citation.jpg);
     border-radius: .4em;
 }
+
 .speech-bubble:after {
     content: '';
     position: absolute;
@@ -17,21 +18,49 @@
     margin-left: 50px;
     margin-bottom: -31px;
 }
+
+a {
+    text-decoration: none;
+}
+
 h1 {
     text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 4em;
+    padding-bottom: 2rem;
+    letter-spacing: -0.6rem;
 }
+
+h5 {
+
+}
+
 .header {
-    background-image: url(/home/coudert/code3/challenge_6/images/header.png);
+    background-image: url(images/header.png);
     padding: 2rem;
+    font-family: 'Abel', sans-serif;
+    font-size: 1.5em;
 }
+
+#navbarSupportedContent {
+    background-color: #65b7e9;
+    color: white;
+}
+
+.navbar {
+    padding: 0;
+}
+
 .img-header {
     margin-top: 2rem;
     padding: 1rem;
     background-color: white;
 }
+
 header li {
     padding:0 2rem;
 }
+
 @keyframes contain {
     from {background-color: blue;}
     10% {background-color: purple;}
@@ -43,10 +72,58 @@ header li {
     80% {background-color: purple;}
     to {background-color: blue;}
 }
-/* body {
-    animation: contain 20s linear;
-    animation-iteration-count: infinite;
+ body {
+    /* animation: contain 20s linear;
+    animation-iteration-count: infinite; */
+    font-family : Arial, sans-serif
 }
-.container {
-    background-color: white;
-} */
+
+
+.container , .card {
+    background-image: url(images/fond.png);
+} 
+
+.btn {
+    background: rgb(255,0,0);
+    background: linear-gradient(0deg, rgba(255,0,0,1) 0%, rgba(255,93,48,1) 50%);
+    border: none;
+    margin-bottom: 2rem;
+}
+
+.lastpart .btn {
+margin-top: 2rem;
+}
+
+.media {
+    background-image: url(images/fond-article.png);
+    padding: 1rem;
+    font-size: 12px;
+}
+
+.shittyimg {
+    margin: 0 2rem 0 0;
+    padding-top: 0;
+}
+
+.card-body:not(.shittyimg) {
+    padding: 0 0 1.5rem 0;
+}
+
+
+.firstpart , .secondpart , footer {
+    padding: 2rem  ;
+}
+
+
+.card {
+    border:none;
+}
+
+.lastpart {
+    padding: 2rem;
+}
+
+footer {
+    background-image: url(images/footer.png);
+}
+
