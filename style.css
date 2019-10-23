@@ -1,0 +1,52 @@
+.speech-bubble {
+    position: relative;
+    background-image: url(/home/coudert/code3/challenge_6/images/citation.jpg);
+    border-radius: .4em;
+}
+.speech-bubble:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 31px solid transparent;
+    border-top-color: #ffffff49;
+    border-bottom: 0;
+    border-left: 0;
+    margin-left: 50px;
+    margin-bottom: -31px;
+}
+h1 {
+    text-align: center;
+}
+.header {
+    background-image: url(/home/coudert/code3/challenge_6/images/header.png);
+    padding: 2rem;
+}
+.img-header {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: white;
+}
+header li {
+    padding:0 2rem;
+}
+@keyframes contain {
+    from {background-color: blue;}
+    10% {background-color: purple;}
+    20% {background-color: red;}
+    30% {background-color: orange;}
+    40% {background-color: yellow;}
+    50% {background-color: orange;}
+    65% {background-color: red;}
+    80% {background-color: purple;}
+    to {background-color: blue;}
+}
+/* body {
+    animation: contain 20s linear;
+    animation-iteration-count: infinite;
+}
+.container {
+    background-color: white;
+} */
