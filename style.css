@@ -12,7 +12,7 @@
     width: 0;
     height: 0;
     border: 31px solid transparent;
-    border-top-color: #ffffff49;
+    border-top-color: #f2f2f2 ;
     border-bottom: 0;
     border-left: 0;
     margin-left: 50px;
@@ -21,6 +21,7 @@
 
 a {
     text-decoration: none;
+    color: white;
 }
 
 h1 {
@@ -29,6 +30,7 @@ h1 {
     font-size: 4em;
     padding-bottom: 2rem;
     letter-spacing: -0.6rem;
+    color: white;
 }
 
 h5 {
@@ -53,7 +55,7 @@ h5 {
 
 .img-header {
     margin-top: 2rem;
-    padding: 1rem;
+    /* padding: 1rem; */
     background-color: white;
 }
 
@@ -61,20 +63,18 @@ header li {
     padding:0 2rem;
 }
 
-@keyframes contain {
-    from {background-color: blue;}
-    10% {background-color: purple;}
-    20% {background-color: red;}
-    30% {background-color: orange;}
-    40% {background-color: yellow;}
-    50% {background-color: orange;}
-    65% {background-color: red;}
-    80% {background-color: purple;}
-    to {background-color: blue;}
+
+
+@keyframes AnimationName {
+    0%{background-position:82% 0%}
+    50%{background-position:19% 100%}
+    100%{background-position:82% 0%}
 }
+
  body {
-    /* animation: contain 20s linear;
-    animation-iteration-count: infinite; */
+    background: linear-gradient(211deg, #ffb600, #ff7e00, #ff5100, #b9430c);
+    background-size: 800% 800%;
+    animation: AnimationName 80s ease infinite;
     font-family : Arial, sans-serif
 }
 
@@ -84,8 +84,9 @@ header li {
 } 
 
 .btn {
-    background: rgb(255,0,0);
-    background: linear-gradient(0deg, rgba(255,0,0,1) 0%, rgba(255,93,48,1) 50%);
+    background: linear-gradient(211deg, #ffb600, #ff7e00, #ff5100, #b9430c);
+    background-size: 800% 800%;
+    animation: AnimationName 40s ease infinite;
     border: none;
     margin-bottom: 2rem;
 }
@@ -119,11 +120,62 @@ margin-top: 2rem;
     border:none;
 }
 
+.lastpart h3:nth-child(1){
+    margin-bottom: 2rem;
+}
+
 .lastpart {
     padding: 2rem;
+}
+
+.thirdpart li {
+    list-style-image: url(images/fleche.png);
+    line-height: 2rem;
 }
 
 footer {
     background-image: url(images/footer.png);
 }
 
+
+@media screen and ( min-width : 768px) and ( max-width : 1023px) {
+    .bubble {
+        margin-bottom: 3rem;
+    }
+
+    .imgsiege {
+        margin: 2rem 0;
+    }
+
+    .lastpart h3:nth-child(1){
+        margin-top: 0;
+    }
+
+    .navbar {
+        margin-left: -1.2rem;
+    }
+}
+
+@media screen and ( max-width : 767px) {
+
+    .navbar-toggler {
+        
+        margin: auto;
+    }
+    .navbar-toggler-icon {
+        font-size: 2rem;
+    color: white;
+    }
+
+    .imgsiege {
+        margin: 2rem 0;
+    }
+
+    .lastpart h3:nth-child(1){
+        margin-top: 2rem;
+    }
+
+    footer {
+        padding: 1rem;
+    }
+}
